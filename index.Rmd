@@ -5,7 +5,7 @@ output: html_document
 
 ### Introduction
 
-An introduction of the problem domain and a description of the variable(s) you are choosing to analyze (and why!)
+In the United States, the prison system is one of the most obvious manifestations of racial inequality. Decades of systemic racism, including policies like the war on drugs and disproportionate policing practices, have resulted in an overrepresentation of people of color in prison. Using data from the Vera Institute, this analysis seeks to identify patterns of racial disparities in incarceration. By focusing on variables related to race and incarceration rates, this report aims to highlight how these disparities appear across counties and over time. The variables chosen are important for understanding the scope of racial injustice in the criminal justice system and identifying potential areas for policy reform.
 
 ### Summary Information
 
@@ -58,6 +58,9 @@ The second chart that you will create and include will show how two different (c
 - You must have clear x and y axis labels
 - The chart needs a clear title 
 - If you choose to add a color encoding (not required), you need a legend for your different color and a clear legend title
+
+``````{r, echo = FALSE, code = readLines("chart2_example.R")}
+```
 
 ### Map
 
