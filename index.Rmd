@@ -9,25 +9,45 @@ In the United States, the prison system is one of the most obvious manifestation
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
-
-These will likely be calculated using your DPLYR skills, answering questions such as: 
-
-- What is the average value of my variable across all the counties (in the current year)?
-- Where is my variable the highest / lowest?
-- How much has my variable change over the last N years?
-
-Feel free to calculate and report values that you find relevant. Again, remember that the purpose is to think about how these measure of incarceration vary by race.
+``````{r, message = FALSE, echo=FALSE, warning = FALSE }
+knitr::opts_chunk$set(echo = FALSE)
+source("summary.R")
+```
+This analysis is based on a prison dataset containing `r total_records` records representing diverse incarceration data from `r unique_counties` distinct counties across `r unique_states` states in the United States. The dataset covers a wide time period, from `r earliest_year` to `r latest_year`, providing a comprehensive historical perspective on incarceration trends. Examining this extensive data provides valuable insights into the variations and developments in prison populations over the last five decades, allowing for a more nuanced understanding of changes in criminal justice policies and their effects on various communities across the country. This analysis serves as a foundation for further research into specific trends, such as demographic shifts, the impact of legislative changes, and potential areas for policy reform.
 
 ### The Dataset
 
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+**Who collected the data?  **
+
+The data was collected by the Vera Institute of Justice.
+
+**How was the data collected or generated?**
+
+The data was collected from various sources, including the Bureau of Justice Statistics (BJS) data collections such as the Census of Jails (COJ) and the Annual Survey of Jails (ASJ), as well as the BJS National Corrections Reporting Program (NCRP) data collection. These sources provide information on jail and prison populations at the county, jurisdiction, and state levels.
+
+**Why was the data collected?**
+
+The data was collected to analyze and understand trends in incarceration rates, particularly at the county level, in order to inform policy decisions, advance research, and guide changes in justice policy and practice regarding mass incarceration.
+
+**How many observations (rows) are in your data?**  
+```{r, warning=FALSE, message=FALSE}
+prison_data <- read.csv("prison_pop_county_state.csv")
+print(nrow(prison_data))
+```
+
+**How many features (columns) are in the data?**  
+```{r, warning=FALSE, message=FALSE}
+prison_data <- read.csv("prison_pop_county_state.csv")
+print(ncol(prison_data))
+```
+
+**What, if any, ethical questions or questions of power do you need to consider when working with this data? ** 
+
+When working with this data, ethical questions may arise concerning issues such as data privacy, fairness in justice systems, and the impact of incarceration on marginalized communities. Additionally, questions of power may arise regarding the representation and interpretation of the data, as well as the influence of various stakeholders in justice policy and practice.
+
+**What are possible limitations or problems with this data?** 
+
+Several limitations may have an impact on this data's utility and accuracy. Firstly, relying on official sources such as the COJ and ASJ may introduce biases depending on what these institutions choose to report or emphasize. The COJ's periodic nature, and the ASJ's partial coverage, may result in data gaps or outdated information. Furthermore, changes in data collection methods over time may affect consistency and comparability across different data sets or time periods. Also, the data's focus on incarceration implies that it involves individuals and systems with significant power disparities. This includes how the justice system interacts with marginalized communities, particularly racial minorities, who are disproportionately affected by incarceration policies. Researchers and policymakers must consider these dynamics in order to avoid misinterpretations that could perpetuate harm or inequality. Furthermore, while the dataset is comprehensive, it may overlook nuanced local practices or unreported metrics that could provide more insight into the justice system's operations and impacts. This may limit our ability to fully understand or address the root causes of disparities in incarceration rates.
 
 
 ### Trends Over Time Chart

@@ -355,36 +355,82 @@ display: none;
 
 <div id="introduction" class="section level3">
 <h3>Introduction</h3>
-<p>An introduction of the problem domain and a description of the
-variable(s) you are choosing to analyze (and why!)</p>
+<p>In the United States, the prison system is one of the most obvious
+manifestations of racial inequality. Decades of systemic racism,
+including policies like the war on drugs and disproportionate policing
+practices, have resulted in an overrepresentation of people of color in
+prison. Using data from the Vera Institute, this analysis seeks to
+identify patterns of racial disparities in incarceration. By focusing on
+variables related to race and incarceration rates, this report aims to
+highlight how these disparities appear across counties and over time.
+The variables chosen are important for understanding the scope of racial
+injustice in the criminal justice system and identifying potential areas
+for policy reform.</p>
 </div>
 <div id="summary-information" class="section level3">
 <h3>Summary Information</h3>
-<p>Write a summary paragraph of findings that includes the 5 values
-calculated from your summary information R script</p>
-<p>These will likely be calculated using your DPLYR skills, answering
-questions such as: </p>
-<ul>
-<li>What is the average value of my variable across all the counties (in
-the current year)?</li>
-<li>Where is my variable the highest / lowest?</li>
-<li>How much has my variable change over the last N years?</li>
-</ul>
-<p>Feel free to calculate and report values that you find relevant.
-Again, remember that the purpose is to think about how these measure of
-incarceration vary by race.</p>
+<p>This analysis is based on a prison dataset containing 153811 records
+representing diverse incarceration data from 1876 distinct counties
+across 51 states in the United States. The dataset covers a wide time
+period, from 1970 to 2018, providing a comprehensive historical
+perspective on incarceration trends. Examining this extensive data
+provides valuable insights into the variations and developments in
+prison populations over the last five decades, allowing for a more
+nuanced understanding of changes in criminal justice policies and their
+effects on various communities across the country. This analysis serves
+as a foundation for further research into specific trends, such as
+demographic shifts, the impact of legislative changes, and potential
+areas for policy reform.</p>
 </div>
 <div id="the-dataset" class="section level3">
 <h3>The Dataset</h3>
-<p>Who collected the data?<br />
-How was the data collected or generated?<br />
-Why was the data collected?<br />
-How many observations (rows) are in your data?<br />
-How many features (columns) are in the data?<br />
-What, if any, ethical questions or questions of power do you need to
-consider when working with this data?<br />
-What are possible limitations or problems with this data? (at least 200
-words)</p>
+<p><strong>Who collected the data? </strong></p>
+<p>The data was collected by the Vera Institute of Justice.</p>
+<p><strong>How was the data collected or generated?</strong></p>
+<p>The data was collected from various sources, including the Bureau of
+Justice Statistics (BJS) data collections such as the Census of Jails
+(COJ) and the Annual Survey of Jails (ASJ), as well as the BJS National
+Corrections Reporting Program (NCRP) data collection. These sources
+provide information on jail and prison populations at the county,
+jurisdiction, and state levels.</p>
+<p><strong>Why was the data collected?</strong></p>
+<p>The data was collected to analyze and understand trends in
+incarceration rates, particularly at the county level, in order to
+inform policy decisions, advance research, and guide changes in justice
+policy and practice regarding mass incarceration.</p>
+<p><strong>How many observations (rows) are in your data?</strong></p>
+<pre><code>## [1] 153811</code></pre>
+<p><strong>How many features (columns) are in the data?</strong></p>
+<pre><code>## [1] 36</code></pre>
+<p><strong>What, if any, ethical questions or questions of power do you
+need to consider when working with this data? </strong></p>
+<p>When working with this data, ethical questions may arise concerning
+issues such as data privacy, fairness in justice systems, and the impact
+of incarceration on marginalized communities. Additionally, questions of
+power may arise regarding the representation and interpretation of the
+data, as well as the influence of various stakeholders in justice policy
+and practice.</p>
+<p><strong>What are possible limitations or problems with this
+data?</strong></p>
+<p>Several limitations could affect the utility and accuracy of this
+data. Firstly, the reliance on official sources like the COJ and ASJ may
+introduce biases based on what these institutions choose to report or
+emphasize. The periodic nature of the COJ (every five to eight years)
+and the partial coverage of the ASJ (one-third of jails) may lead to
+gaps in data or outdated information. Additionally, changes in data
+collection methods over time might affect consistency and comparability
+across different data sets or time periods.The data’s focus on
+incarceration also means it inherently involves individuals and systems
+with significant power imbalances. This includes the justice system’s
+interactions with marginalized communities, particularly racial
+minorities who are disproportionately affected by incarceration
+policies. Researchers and policymakers must consider these dynamics to
+avoid misinterpretations that could perpetuate harm or
+inequality.Furthermore, while the dataset is comprehensive, it might
+still miss nuanced local practices or non-reported metrics that could
+provide deeper insights into the justice system’s operations and
+impacts. This could limit the ability to fully understand or address the
+underlying causes of disparities in incarceration rates.</p>
 </div>
 <div id="trends-over-time-chart" class="section level3">
 <h3>Trends Over Time Chart</h3>
