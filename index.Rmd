@@ -52,32 +52,15 @@ Several limitations may have an impact on this data's utility and accuracy. Firs
 
 ### Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The first chart that you will create and include will show the trend over time of your variable/topic. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - This may mean showing the same measure for different locations or different racial groups. Think carefully about a meaningful comparison of locations (e.g., the top 10 counties in a state, top 10 states, etc.)
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear legend title
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+``````{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("chart1_example.R")}
 ```
+
+The chart "Prison Population Trends by Race Over Time" depicts significant changes in the racial composition of the US prison population between 1970 and 2016. It shows a sharp increase in incarceration rates beginning in the early 1980s (possibly due to poor data collection back in the day), with a peak in the mid-2000s, particularly among Black populations, indicating significant racial disparities. Since 2000, there has been a noticeable stabilization in numbers, coinciding with sentencing reforms and shifts in societal and legal approaches to crime. This visualization emphasizes the critical need for ongoing discussion and analysis of racial disparities in the justice system by providing a clear and understandable overview of changes over four decades.
+
 
 ### Variable Comparison Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The second chart that you will create and include will show how two different (continuous) variables are related to one another. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- If you choose to add a color encoding (not required), you need a legend for your different color and a clear legend title
+This grouped bar chart compares the prison population rates for Black and White populations over time. The chart aims to highlight the disparities in incarceration rates between these two racial groups and track how they have changed between 1990 and 2016. The chart shows a consistent and significant disparity in prison population rates for Black and White populations. Historically, Black people have had a significantly higher prison population rate than White people. The chart also depicts trends over time, such as peaks and declines in incarceration rates, which could be attributed to a variety of sociopolitical factors and changes in law enforcement practices or policies.
 
 ``````{r, echo = FALSE, code = readLines("chart2_example.R")}
 ```
