@@ -67,11 +67,10 @@ This grouped bar chart compares the prison population rates for Black and White 
 
 ### Map
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+``````{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("map_example.R")}
+```
 
-The last chart that you will create and include will show how a variable is distributed geographically. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
+The map of America's black prison population shows considerable geographical variances, with higher populations in Southern states like Georgia, Alabama, and Mississippi. Urban counties have higher black jail numbers than rural places, most likely due to bigger total populations. States with large urban centers, such as Texas, California, and New York, have sizable black jail populations spread throughout numerous counties. Some regions, particularly in the Midwest and West, have scarce data or lower populations, which could reflect actual demographic trends or gaps in data collection. These patterns highlight the importance of focused legislative actions to reduce racial inequities in the criminal justice system.
 
-- Your map needs a title
-- Your color scale needs a legend with a clear label
-- Use a map based coordinate system to set the aspect ratio of your map
+
 
